@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="javascript/script.js" defer></script>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<title>Rock paper scissors</title>
+	</head>
+
+	<body>
+		<main>
+			<section class="score-board">
+				<div class="game-name all-caps">
+					<span>Rock</span><br /><span>Paper</span> <br /><span>Scissors</span>
+				</div>
+				<div class="scores-container">
+					<div class="player-score bg-white text-dark">
+						<p class="all-caps">Your score</p>
+						<p class="score">0</p>
+					</div>
+					<div class="computer-score bg-white text-dark">
+						<p class="all-caps">Computer's score</p>
+						<p class="score">0</p>
+					</div>
+				</div>
+			</section>
+			<section class="choices icons">
+				<div class="rock icon" data-name="rock">
+					<div><img src="images/icon-rock.svg" alt="rock" /></div>
+				</div>
+				<div class="paper icon" data-name="paper">
+					<div><img src="images/icon-paper.svg" alt="paper" /></div>
+				</div>
+				<div class="scissors icon" data-name="scissors">
+					<div><img src="images/icon-scissors.svg" alt="scissors" /></div>
+				</div>
+			</section>
+			<section class="result-display hidden">
+				<div class="all-caps">
+					<p>You picked</p>
+					<p>Computer picked</p>
+				</div>
+				<div class="icons">
+					<div class="player-choice bg-white icon">
+						<img src="images/icon-paper.svg" alt="" />
+					</div>
+					<div class="game-result">
+						<p class="result all-caps">You win</p>
+						<p class="description"></p>
+						<button class="btn keep-playing text-dark all-caps">
+							Keep playing
+						</button>
+					</div>
+					<div class="computer-choice icon">
+						<div><img src="images/icon-rock.svg" alt="" /></div>
+					</div>
+				</div>
+			</section>
+			<section class="game-over hidden">
+				<p class="all-caps">Game over</p>
+				<p class="result"></p>
+				<button class="btn try-again">Try again</button>
+			</section>
+		</main>
+	</body>
+</html>

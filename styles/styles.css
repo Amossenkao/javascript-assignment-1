@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: radial-gradient(hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	padding-top: 3rem;
+	justify-content: center;
+	color: #fff;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.text-dark {
+	color: rgb(59, 67, 99);
+}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.hidden {
+	display: none;
+}
+
+.score-board {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 45vw;
+	padding: 1rem;
+	border-radius: 10px;
+	border: solid;
+}
+
+.scores-container {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.scores-container .score {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.game-name {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.score-board .bg-white {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.choices.icons {
+	display: flex;
+	gap: 2rem;
+	margin-top: 8rem;
+}
+
+.icons > .icon {
+	width: 8rem;
+	height: 8rem;
+	border: solid;
+	position: relative;
+	border-radius: 50%;
+	background-color: #fff;
+	cursor: pointer;
+	border: 10px solid hsl(230deg, 89%, 62%);
+}
+
+.icons > .icon > * {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+}
+
+.result-display {
+	width: 45vw;
+	margin-top: -3rem;
+	transition: 0.5s;
+}
+
+.result-display > * {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.result-display .icon {
+	cursor: initial;
+}
+
+.icon.lost {
+	border-color: rgb(220, 46, 78);
+}
+
+.result-display > div:first-child {
+	margin-bottom: 3rem;
+	padding-left: 5px;
+}
+
+.game-result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.btn {
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+}
+.game-over:not(.game-over.hidden) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.game-over .all-caps {
+	font-size: 24px;
+}
