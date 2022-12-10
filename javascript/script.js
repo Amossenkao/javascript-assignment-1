@@ -72,14 +72,12 @@ function toggleClass(gameOver = false) {
 function displayResults(playerChoice, computerChoice, result) {
 	const playerIcon = document.querySelector('.icons .player-choice');
 	const computerIcon = document.querySelector('.icons .computer-choice');
-	playerIcon.firstElementChild.setAttribute(
-		'src',
-		`images/icon-${playerChoice}.svg`
-	);
-	computerIcon.firstElementChild.setAttribute(
-		'src',
-		`images/icon-${computerChoice}.svg`
-	);
+	playerIcon
+		.querySelector('img')
+		.setAttribute('src', `images/icon-${playerChoice}.svg`);
+	computerIcon
+		.querySelector('img')
+		.setAttribute('src', `images/icon-${computerChoice}.svg`);
 
 	if (result === true) {
 		playerIcon.classList.remove('lost');
